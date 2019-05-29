@@ -1,0 +1,39 @@
+/* Custom styling to make bootstrap unique */
+
+.hero-lead {
+	padding-top: 5%;
+}
+
+.modal-body {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.jumbotron {
+	background: url('./images/manage-freelancers.jpg') no-repeat center center /
+		cover;
+	height: 90vh;
+	width: 100%;
+	padding-top: 0;
+}
+
+.bg-light {
+	background-color: transparent !important;
+}
+
+button.join {
+	margin-left: 10px;
+}
+
+.margin-top-bottom {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.mute-link {
+	color: #585858;
+}
+
+a.mute-link:hover {
+	text-decoration: none;
+}

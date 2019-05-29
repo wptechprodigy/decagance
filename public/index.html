@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Decagance - Welcome</title>
+	</head>
+	<body>
+    <!-- Sign In Modal -->
+    <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="siginModalTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="siginModalTitle">Login to Decagance</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="yourname@example.com">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password2" placeholder="password">
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-primary btn-block">Login</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <small class="text-muted">Not a member yet? <a class="mute-link" data-toggle="modal" data-target="#joinNowModal" href="#">Join now</a>.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Join Now Modal -->
+    <div class="modal fade" id="joinNowModal" tabindex="-1" role="dialog" aria-labelledby="joinNowModalTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="joinNowModalTitle">Join Decagance</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="first-name">First Name</label>
+                  <input type="text" class="form-control" id="first-name" placeholder="Jane">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" class="form-control" id="last-name" placeholder="Doe">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="password">
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="password">
+              </div>              
+              <button type="submit" class="btn btn-primary btn-block">Join</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <small class="text-muted">Already a member? <a class="mute-link" data-toggle="modal" data-target="#signinModal" href="#">Sign in</a>.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Freelancer Details Modal -->
+    <div class="modal fade" id="freelancerDetailsModal" tabindex="-1" role="dialog" aria-labelledby="freelancerDetailsModalTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="freelancerDetailsModalTitle">Freelancer Details</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                      This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+		<!-- Header section -->
+		<section class="jumbotron jumbotron-fluid">
+			<!-- Navigation -->
+			<div class="container-fluid">
+				<!-- Navigation -->
+				<nav class="navbar navbar-light bg-light">
+					<a class="navbar-brand mb-0 h1" href="#">Decagance</a>
+					<!-- Nav links -->
+					<div class="nav nav-pills justify-content-end">
+						<button class="nav-link btn btn-outline-primary" data-toggle="modal" data-target="#signinModal" href="#">
+							Sign In
+						</button>
+						<button class="nav-link btn btn-primary join" data-toggle="modal" data-target="#joinNowModal" href="#">Join</button>
+					</div>
+				</nav>
+
+				<!-- Lead content (Hero area content) -->
+				<div class="container hero-lead">
+					<h1 class="display-6">
+						Find The Perfect Freelancer<br />
+						For Your Needs.
+					</h1>
+					<p class="lead text-muted">
+						This is an online freelance market place.<br />
+						Get more done. In much less time.
+					</p>
+					<a class="btn btn-outline-secondary btn-lg" href="#ourfreelancers" role="button"
+						>Checkout Freelancers</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main content -->
+		<section class="container margin-top-bottom">
+      <div class="mx-auto mb-5">
+        <a id="ourfreelancers"><h1>Our Freelancers</h1></a>
+      </div>
+      <div class="card-deck">
+        <div class="card">
+          <img src="https://pixel.nymag.com/imgs/daily/vulture/2017/07/18/18-arya-stark.w500.h500.jpg" class="card-img-top" alt="Freelancer name">
+          <div class="card-body">
+            <h5 class="card-title">Arya Stark</h5>
+            <p class="card-text">I am a nobody</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><i class="fas fa-star"></i> 4.5 Ratings</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-05/11/18/campaign_images/webdr14/24-reasons-why-jaime-lannister-is-the-sexiest-man-2-7883-1431382617-5_dblbig.jpg" class="card-img-top" alt="freelancer name">
+          <div class="card-body">
+            <h5 class="card-title">Jamie Lannister</h5>
+            <p class="card-text">I am a kingslayer.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><i class="fas fa-star"></i> 3.9 Ratings</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://lh3.googleusercontent.com/ezoMA_6b3dtWzJ3XXYLZaKvU2U_cI6to9Sk4IE_Ub5aTh2i_WNU549zSdC80rZQx4hpQR0XVq_inrv_3zyITAA=s750" class="card-img-top" alt="freelancer name">
+          <div class="card-body">
+            <h5 class="card-title">Tyrion Lannister</h5>
+            <p class="card-text">I have all the brains to get it to work.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><i class="fas fa-star"></i> 5.0 Ratings</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+		<!-- Footer section -->
+		<section class="mx-auto">
+      <div class="card-footer">
+        <small class="text-muted">Decagance &copy; 2019. All Rights Reserved.</small>
+      </div>
+    </section>
+
+		<!-- Scripts required by Boostrap components -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
