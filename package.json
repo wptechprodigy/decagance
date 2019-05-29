@@ -1,0 +1,28 @@
+{
+  "name": "decagance",
+  "version": "1.0.0",
+  "description": "An online freelance market place inspired by Decagon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wptechprodigy/decagance.git"
+  },
+  "keywords": [
+    "freelance",
+    "service-online",
+    "online-market",
+    "online-services"
+  ],
+  "author": "Waheed Afolabi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wptechprodigy/decagance/issues"
+  },
+  "homepage": "https://github.com/wptechprodigy/decagance#readme",
+  "dependencies": {
+    "json-server": "^0.15.0"
+  }
+}

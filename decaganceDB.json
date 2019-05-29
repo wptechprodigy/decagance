@@ -1,0 +1,34 @@
+{
+	"freelancers": [
+		{
+			"id": 1,
+			"first-name": "Arya",
+			"last-name": "Stark",
+			"email": "aryastark@got.com",
+			"password": "123456",
+			"phone-number": 2348012345678,
+			"location": "Winterfell",
+			"skills": ["Writing", "HTML", "CSS"],
+			"Description": "I am a nobody",
+			"ratings": 4.5,
+			"services": ["Web development", "API Design"],
+			"role": "freelancer",
+			"image": "https://pixel.nymag.com/imgs/daily/vulture/2017/07/18/18-arya-stark.w700.h700.jpg"
+		},
+		{
+			"id": 2,
+			"first-name": "Jamie",
+			"last-name": "Lannister",
+			"email": "j.lannister@got.com",
+			"password": "1234567",
+			"phone-number": 2348012345679,
+			"location": "Kingslanding",
+			"skills": ["Kingslaying", "Javascript", "jQuery"],
+			"Description": "I am a kingslayer",
+			"ratings": 4.0,
+			"services": ["Web development", "API Design", "UI"],
+			"role": "freelancer",
+			"image": "https://img.buzzfeed.com/buzzfeed-static/static/2015-05/11/18/campaign_images/webdr14/24-reasons-why-jaime-lannister-is-the-sexiest-man-2-7883-1431382617-5_dblbig.jpg"
+		}
+	]
+}
