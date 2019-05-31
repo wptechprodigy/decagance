@@ -37,3 +37,8 @@ button.join {
 a.mute-link:hover {
 	text-decoration: none;
 }
+
+.card > img {
+	width: 100%;
+	height: auto;
+}

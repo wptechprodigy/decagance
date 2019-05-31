@@ -31,17 +31,23 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <div class="alert alert-danger alert-dismissible collapse" role="alert">
+              <div id="alert-message-content"></div>
+              <button type="button" class="close" id="alertClose" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form method="POST" action="" id="login-form">
               <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" placeholder="yourname@example.com">
               </div>
               <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="password2" placeholder="password">
+                <input type="password" class="form-control" id="password" placeholder="password">
               </div>
               <div class="form-group">
-                <button type="button" class="btn btn-primary btn-block">Login</button>
+                <button id="login-btn" type="button" class="btn btn-primary btn-block">Login</button>
               </div>
             </form>
           </div>
@@ -64,7 +70,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form method="POST" action="" id="join-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="first-name">First Name</label>
@@ -76,14 +82,18 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="password">
+                <label for="join-email">Password</label>
+                <input type="email" class="form-control" id="join-email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="join-password">Password</label>
+                <input type="password" class="form-control" id="join-password" placeholder="Password">
               </div>
               <div class="form-group">
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" class="form-control" id="confirm-password" placeholder="password">
+                <input type="password" class="form-control" id="confirm-password" placeholder="Password">
               </div>              
-              <button type="submit" class="btn btn-primary btn-block">Join</button>
+              <button id="join-btn" class="btn btn-primary btn-block">Join</button>
             </form>
           </div>
           <div class="modal-footer">
@@ -108,7 +118,7 @@
             <div class="card mb-3" style="max-width: 540px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <img src="https://pixel.nymag.com/imgs/daily/vulture/2017/07/18/18-arya-stark.w500.h500.jpg" class="card-img" alt="freelancer details" height="fit">
+                  <img src="https://pixel.nymag.com/imgs/daily/vulture/2017/07/18/18-arya-stark.w500.h500.jpg" class="card-img" alt="freelancer details" height="100%">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -164,42 +174,7 @@
       <div class="mx-auto mb-5">
         <a id="ourfreelancers"><h1>Our Freelancers</h1></a>
       </div>
-      <div class="card-deck">
-        <div class="card">
-          <img src="https://pixel.nymag.com/imgs/daily/vulture/2017/07/18/18-arya-stark.w500.h500.jpg" class="card-img-top" alt="Freelancer name">
-          <div class="card-body">
-            <h5 class="card-title">Arya Stark</h5>
-            <p class="card-text">I am a nobody</p>
-          </div>
-          <div class="card-footer d-flex justify-content-around">
-              <small class="text-muted"><i class="fas fa-star"></i> 4.5 Ratings</small>
-              <small class="text-muted"><a href="#" data-toggle="modal" data-target="#freelancerDetailsModal"><i class="fas fa-eye"></i></a></i></small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-05/11/18/campaign_images/webdr14/24-reasons-why-jaime-lannister-is-the-sexiest-man-2-7883-1431382617-5_dblbig.jpg" class="card-img-top" alt="freelancer name">
-          <div class="card-body">
-            <h5 class="card-title">Jamie Lannister</h5>
-            <p class="card-text">I am a kingslayer.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-around">
-            <small class="text-muted"><i class="fas fa-star"></i> 3.9 Ratings</small>
-            <small class="text-muted"><a href="#" data-toggle="modal" data-target="#freelancerDetailsModal"><i
-                  class="fas fa-eye"></i></a></i></small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://lh3.googleusercontent.com/ezoMA_6b3dtWzJ3XXYLZaKvU2U_cI6to9Sk4IE_Ub5aTh2i_WNU549zSdC80rZQx4hpQR0XVq_inrv_3zyITAA=s750" class="card-img-top" alt="freelancer name">
-          <div class="card-body">
-            <h5 class="card-title">Tyrion Lannister</h5>
-            <p class="card-text">I have all the brains to get it to work.</p>
-          </div>
-          <div class="card-footer d-flex justify-content-around">
-            <small class="text-muted"><i class="fas fa-star"></i> 5.0 Ratings</small>            
-            <small class="text-muted"><a href="#" data-toggle="modal" data-target="#freelancerDetailsModal"><i class="fas fa-eye"></i></a></i></small>
-          </div>
-        </div>
-      </div>
+      <div class="card-deck"></div>
     </section>
 
 		<!-- Footer section -->
@@ -210,11 +185,7 @@
     </section>
 
 		<!-- Scripts required by Boostrap components -->
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-			crossorigin="anonymous"
-		></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -225,5 +196,6 @@
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"
 		></script>
+    <script src="./index.js"></script>
 	</body>
 </html>
