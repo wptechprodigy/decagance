@@ -4,13 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
 		<!-- Bootstrap CSS -->
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-			crossorigin="anonymous"
-		/>
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
+		
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -18,7 +15,7 @@
 		<link rel="stylesheet" href="./styles.css" />
 		<title>Decagance - Welcome</title>
 	</head>
-	<body>
+	<body id="wholeBody">
     <!-- Sign In Modal -->
     <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="siginModalTitle"
       aria-hidden="true">
@@ -70,6 +67,12 @@
             </button>
           </div>
           <div class="modal-body">
+            <div class="alert alert-danger alert-dismissible collapse" role="alert">
+              <div id="alert-message-content"></div>
+              <button type="button" class="close" id="alertClose" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
             <form method="POST" action="" id="join-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
@@ -82,7 +85,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="join-email">Password</label>
+                <label for="join-email">Email</label>
                 <input type="email" class="form-control" id="join-email" placeholder="Email">
               </div>
               <div class="form-group">
@@ -185,17 +188,19 @@
     </section>
 
 		<!-- Scripts required by Boostrap components -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script src="./js/jQuery.min.js"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 			crossorigin="anonymous"
 		></script>
-		<script
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+		<!-- <script
 			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"
-		></script>
+		></script> -->
     <script src="./index.js"></script>
 	</body>
 </html>
