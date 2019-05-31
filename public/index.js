@@ -12,9 +12,6 @@ $(function() {
 	let $joinPassword = $('#join-password');
 	let $confirmPassword = $('#confirm-password');
 
-	// Grab the freelancer profile display
-	let $freelancerProfile = $('#freelancer-profile');
-
 	// Grab the body
 	let $body = $('#wholeBody');
 
@@ -115,9 +112,7 @@ $(function() {
 								resetModal('#login-form');
 								closeModal();
 							}, 3200);
-							$body
-								.addClass('bg-light')
-								.html(`<h1>Replaced the home page!</h1>`);
+							$body.addClass('bg-light').html($profileBody);
 							// window.location.replace('./profile.html');
 						} else {
 							alertHandler($messageContent, 'fail');
@@ -233,6 +228,7 @@ $(function() {
       </div>
     </section>
   `;
+
 	// Register a new freelancer
 	$('#join-btn').click(function(event) {
 		event.preventDefault();
@@ -274,7 +270,16 @@ $(function() {
 					console.log(newFreelancer);
 					$('#join-form').trigger('reset');
 					closeModal();
-					let newFreelancerData = {};
+					let newFreelancerData = {
+						firstName: newFreelancer.firstName,
+						lastName: $lastName.val(),
+						email: $joinEmail.val(),
+						description: '',
+						ratings: 0,
+						services: [],
+						role: 'freelancer',
+						image: ''
+					};
 					$body.addClass('bg-light').html($profileBody);
 
 					// window.location.replace('./profile.html');
