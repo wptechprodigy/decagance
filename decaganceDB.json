@@ -1,43 +1,90 @@
 {
-	"freelancers": [
-		{
-			"id": 1,
-			"firstName": "Arya",
-			"lastName": "Stark",
-			"email": "aryastark@got.com",
-			"password": "123456",
-			"location": "Winterfell",
-			"description": "I am a nobody",
-			"ratings": 4.5,
-			"services": ["Web development", "API Design"],
-			"role": "freelancer",
-			"image": "./images/aryaStark.jpg"
-		},
-		{
-			"id": 2,
-			"firstName": "Jamie",
-			"lastName": "Lannister",
-			"email": "j.lannister@got.com",
-			"password": "1234567",
-			"location": "Kingslanding",
-			"description": "I am a kingslayer",
-			"ratings": 4,
-			"services": ["Web development", "API Design", "UI"],
-			"role": "freelancer",
-			"image": "./images/jamieLannister.jpg"
-		},
-		{
-			"id": 3,
-			"firstName": "Tyrion",
-			"lastName": "Lannister",
-			"email": "t.lannister@got.com",
-			"password": "1234567",
-			"location": "Kingslanding",
-			"description": "I am all the brains to get it to work",
-			"ratings": 4,
-			"services": ["Business Planning", "Content writing", "UX"],
-			"role": "freelancer",
-			"image": "./images/tyrion-lannister.png"
-		}
-	]
+  "freelancers": [
+    {
+      "id": 1,
+      "firstName": "Arya",
+      "lastName": "Stark",
+      "email": "aryastark@got.com",
+      "password": "123456",
+      "location": "Winterfell",
+      "description": "I am a nobody",
+      "ratings": 4.5,
+      "services": [
+        "Web development",
+        "API Design"
+      ],
+      "role": "freelancer",
+      "image": "./images/aryaStark.jpg"
+    },
+    {
+      "id": 2,
+      "firstName": "Jamie",
+      "lastName": "Lannister",
+      "email": "j.lannister@got.com",
+      "password": "1234567",
+      "location": "Kingslanding",
+      "description": "I am a kingslayer",
+      "ratings": 4,
+      "services": [
+        "Web development",
+        "API Design",
+        "UI"
+      ],
+      "role": "freelancer",
+      "image": "./images/jamieLannister.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Tyrion",
+      "lastName": "Lannister",
+      "email": "t.lannister@got.com",
+      "password": "1234567",
+      "location": "Kingslanding",
+      "description": "I am all the brains to get it to work",
+      "ratings": 4,
+      "services": [
+        "Business Planning",
+        "Content writing",
+        "UX"
+      ],
+      "role": "freelancer",
+      "image": "./images/tyrion-lannister.png"
+    },
+    {
+      "firstName": "Mark",
+      "lastName": "Snow",
+      "email": "mark@gmail.com",
+      "password": "12345",
+      "location": "",
+      "description": "",
+      "ratings": "0",
+      "role": "freelancer",
+      "image": "",
+      "id": 4
+    },
+    {
+      "firstName": "Waheed",
+      "lastName": "Afolabi",
+      "email": "waheed.remote247@gmail.com",
+      "password": "123",
+      "location": "",
+      "description": "",
+      "ratings": "0",
+      "role": "freelancer",
+      "image": "",
+      "id": 5
+    },
+    {
+      "firstName": "Mark",
+      "lastName": "Late",
+      "email": "mak@gt.com",
+      "password": "1234",
+      "location": "",
+      "description": "",
+      "ratings": "0",
+      "role": "freelancer",
+      "image": "",
+      "id": 6
+    }
+  ]
 }
