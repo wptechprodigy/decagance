@@ -2,48 +2,42 @@
 	"freelancers": [
 		{
 			"id": 1,
-			"first-name": "Arya",
-			"last-name": "Stark",
+			"firstName": "Arya",
+			"lastName": "Stark",
 			"email": "aryastark@got.com",
 			"password": "123456",
-			"phone-number": 2348012345678,
 			"location": "Winterfell",
-			"skills": ["Writing", "HTML", "CSS"],
-			"Description": "I am a nobody",
+			"description": "I am a nobody",
 			"ratings": 4.5,
 			"services": ["Web development", "API Design"],
 			"role": "freelancer",
-			"image": "https://pixel.nymag.com/imgs/daily/vulture/2017/07/18/18-arya-stark.w700.h700.jpg"
+			"image": "./images/aryaStark.jpg"
 		},
 		{
 			"id": 2,
-			"first-name": "Jamie",
-			"last-name": "Lannister",
+			"firstName": "Jamie",
+			"lastName": "Lannister",
 			"email": "j.lannister@got.com",
 			"password": "1234567",
-			"phone-number": 2348012345679,
 			"location": "Kingslanding",
-			"skills": ["Kingslaying", "Javascript", "jQuery"],
-			"Description": "I am a kingslayer",
-			"ratings": 4.0,
+			"description": "I am a kingslayer",
+			"ratings": 4,
 			"services": ["Web development", "API Design", "UI"],
 			"role": "freelancer",
-			"image": "https://img.buzzfeed.com/buzzfeed-static/static/2015-05/11/18/campaign_images/webdr14/24-reasons-why-jaime-lannister-is-the-sexiest-man-2-7883-1431382617-5_dblbig.jpg"
+			"image": "./images/jamieLannister.jpg"
 		},
 		{
 			"id": 3,
-			"first-name": "Tyrion",
-			"last-name": "Lannister",
+			"firstName": "Tyrion",
+			"lastName": "Lannister",
 			"email": "t.lannister@got.com",
 			"password": "1234567",
-			"phone-number": 2348012345680,
 			"location": "Kingslanding",
-			"skills": ["Writing", "Poetry", "Big Data"],
-			"Description": "I am all the brains to get it to work",
-			"ratings": 4.0,
+			"description": "I am all the brains to get it to work",
+			"ratings": 4,
 			"services": ["Business Planning", "Content writing", "UX"],
 			"role": "freelancer",
-			"image": "https://img.buzzfeed.com/buzzfeed-static/static/2015-05/11/18/campaign_images/webdr14/24-reasons-why-jaime-lannister-is-the-sexiest-man-2-7883-1431382617-5_dblbig.jpg"
+			"image": "./images/tyrion-lannister.png"
 		}
 	]
 }
